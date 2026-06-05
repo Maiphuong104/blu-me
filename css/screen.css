@@ -1,0 +1,420 @@
+/** {
+    margin: 20%;
+}*/
+
+
+body{
+    font-family: "Blu-me";
+    font-size: 25px;
+}
+
+p {
+    font-size: 29px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+}
+
+p2 {
+    font-family: "NewEdge666";
+    font-size: 22px;
+}
+
+p3 {
+    font-family: "NewEdge666";
+    font-size: 17px;
+    line-height: 0.5;
+    background-color: #39FF14;
+}
+
+.background-image {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: red;
+    background: url("../img/hoa_BG.png");
+    background-size: 100% 100%;
+}
+
+.content{
+    margin: 5% 5% 5% 5%;
+}
+
+
+.headline {
+    font-family: "NewEdge666";
+    font-size: 50pt;
+    line-height: 1.1;
+}
+
+.container {
+    margin-top: 7%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: -5%;
+    margin-right: -5%;
+    margin-top: 5%;
+}
+
+.column2 {
+    flex: 1;
+    padding: 0;
+/*    box-sizing: border-box;*/
+}
+
+.row2 {
+    flex: 1;
+    display: flex;
+
+}
+
+.flower {
+    color: black;
+    background-color: #39FF14;
+    font-size: 130px;
+    text-align: left;
+    margin-top: 5%;
+    padding: 5%;
+}
+
+.variable-font {
+    margin-top: 2%;
+    font-family: "NewEdge666";
+    font-size: 22px;
+}
+
+.next-to-flower {
+    color: black;
+    background-color: #39FF14;
+    text-align: left;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* remove original look of slider on Chrome/Safari */
+    width: 100%; /* width of slider */
+    height: 2px; /* height of slider */
+    border-radius: 2px; /* border radius of slider */
+    background: #808080; /* background of slider */
+    outline: none; /* remove outline */
+    opacity: 1; /* opacity of slider when not focus */
+    transition: opacity 0.2s; /* opacity transition */
+    min-width: 50px;
+    margin: 10px 0;
+}
+
+/* hover status of slider */
+input[type="range"]:hover {
+    opacity: 1; 
+}
+
+/* set up for thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* remove original look of thumb on Chrome/Safari */
+    width: 10px; /* width of thumb */
+    height: 20px; /* height of thumb */
+    border-radius: 10%; /* border radius of thumb */
+    background: #808080; /* background of thumb */
+    cursor: pointer; /* mouse pointer */
+}
+
+/* set up for thumb when hover */
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #808080; /* background of thumb when hover */
+}
+
+
+
+#showButton {
+    background-image: url("../img/button.png");
+    background-size: cover; 
+    width: 180px ; /* Đặt chiều rộng của nút */
+    height: 160px; /* Đặt chiều cao của nút */
+    background-color: rgba(0, 0, 0, 0); /* Màu nền trong suốt */
+    border: none;
+    padding: 5%;
+    text-align: center;
+    font-size: 90px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 3.5s;
+    transition-property: transform;
+}
+
+#showButton:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    background-color: #39FF14;
+}
+
+#showButton2 {
+    background-image: url("../img/button.png");
+    background-size: cover; 
+    width: 180px ; /* Đặt chiều rộng của nút */
+    height: 160px; /* Đặt chiều cao của nút */
+    background-color: rgba(0, 0, 0, 0); /* Màu nền trong suốt */
+    border: none;
+    padding: 5%;
+    text-align: center;
+    font-size: 90px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 3.5s;
+    transition-property: transform;
+}
+
+#showButton2:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    background-color: #39FF14;
+}
+
+#showButton3 {
+    background-image: url("../img/button.png");
+    background-size: cover; 
+    width: 180px ; /* Đặt chiều rộng của nút */
+    height: 160px; /* Đặt chiều cao của nút */
+    background-color: rgba(0, 0, 0, 0); /* Màu nền trong suốt */
+    border: none;
+    padding: 5%;
+    text-align: center;
+    font-size: 90px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 3.5s;
+    transition-property: transform;
+}
+
+#showButton3:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    background-color: #39FF14;
+}
+
+#showButton4 {
+    background-image: url("../img/button.png");
+    background-size: cover; 
+    width: 180px ; /* Đặt chiều rộng của nút */
+    height: 160px; /* Đặt chiều cao của nút */
+    background-color: rgba(0, 0, 0, 0); /* Màu nền trong suốt */
+    border: none;
+    padding: 5%;
+    text-align: center;
+    font-size: 90px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 3.5s;
+    transition-property: transform;
+}
+
+#showButton4:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    background-color: #39FF14;
+}
+
+#showButton5 {
+    background-image: url("../img/button.png");
+    background-size: cover; 
+    width: 180px ; /* Đặt chiều rộng của nút */
+    height: 160px; /* Đặt chiều cao của nút */
+    background-color: rgba(0, 0, 0, 0); /* Màu nền trong suốt */
+    border: none;
+    padding: 5%;
+    text-align: center;
+    font-size: 90px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 3.5s;
+    transition-property: transform;
+}
+
+#showButton5:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    background-color: #39FF14;
+}
+
+#showButton6 {
+    background-image: url("../img/button.png");
+    background-size: cover; 
+    width: 180px ; /* Đặt chiều rộng của nút */
+    height: 160px; /* Đặt chiều cao của nút */
+    background-color: rgba(0, 0, 0, 0); /* Màu nền trong suốt */
+    border: none;
+    padding: 5%;
+    text-align: center;
+    font-size: 90px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 3.5s;
+    transition-property: transform;
+}
+
+#showButton6:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    background-color: #39FF14;
+}
+
+#hiddenText {
+  display: none;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+#hiddenText2 {
+  display: none;
+  position: absolute;
+  bottom: 3%;
+  left: 15%;
+}
+
+#hiddenText3 {
+  display: none;
+  position: absolute;
+  top: 2%;
+  left: 22%;
+}
+
+#hiddenText4 {
+  display: none;
+  position: absolute;
+  top: -2%;
+  left: 50%;
+
+}
+
+#hiddenText5 {
+  display: none;
+  position: absolute;
+  bottom: 0%;
+  right:20%;
+}
+
+#hiddenText6 {
+  display: none;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+h2 {
+    font-family: "NewEdge666";
+    font-size: 25pt;
+    color: white;
+    background-color: black;
+}
+
+h2:hover {
+    color: black;
+    background-color: #39FF14;
+}
+
+
+.layout {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #d3d3d3;
+}
+
+.right-text {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.pic03 {
+    margin-left: 40%;
+    margin-top: -20%;
+}
+
+.pic04 {
+    width: 70%;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+
+.pic05 {
+    width: 80%;
+}
+
+.pic06 {
+    width: 50%;
+    margin-left: 30%;
+    margin-top: -20%;
+    margin-right: 10%;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth;
+    margin: 0% -5% 0% -4%;
+ 
+}
+
+.gallery img {
+    scroll-snap-align: start; 
+    max-width:40%;
+    margin: 0% 0% 0% 0%;
+}
+
+.highlight {
+font-family: "Blu-me";
+  transition: font-variation-settings 5.0s ease-in;
+  animation-name: flower-animation;
+  animation-duration: 5.0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.highlight:hover {
+    background-color:  #39FF14;
+}
+
+@keyframes flower-animation {
+  from {
+    font-variation-settings: "BLUM" 0;
+  }
+  to {
+    font-variation-settings: "BLUM" 100;
+  }
+}
+
+summary {
+    padding: 0px;
+}
+
+

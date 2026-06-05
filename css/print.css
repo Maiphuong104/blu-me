@@ -1,0 +1,206 @@
+@media print {
+
+    /* Size and marin for all pages ------------- */
+    @page {
+        size: 210mm 297mm;
+        margin-top: 5mm;
+        margin-bottom: 10mm;
+        font-family: "Blu-me";
+}  
+
+
+    /* LEFT PAGES -------------------------------- */
+
+    @page:left {
+        margin-left: 6mm;
+        margin-right: 6mm;
+        @bottom-left {
+            font-family: "NewEdge666";
+            font-size: 50pt;
+            content: counter(page);
+            width: auto;
+        }
+        @bottom-center{
+            text-align: left;
+        }
+    }
+
+
+    /* RIGHT PAGES -------------------------------- */
+
+    @page:right {
+        margin-left: 6mm;
+        margin-right: 6mm;
+        @bottom-right {
+            font-family: "NewEdge666";
+            font-size: 50pt;
+            content: counter(page);
+            width: auto;
+        }
+        @bottom-center{
+            text-align: right;
+        }
+    }
+
+
+
+    /* BLANK PAGES -------------------------------- */
+
+    @page:blank {
+        @left-top { content: none; }
+        @bottom-center { content: none; }
+        @right-top { content: none; }
+    }
+
+
+
+    /* COVER ------------------------------------- */
+
+    @page:first{
+    margin: 0; 
+    background-image: url("../img/hoa_BG.png");
+    background-size: cover;
+
+/*    @left-middle {
+    content: 
+    "A Blu-me Typeface";
+    font-family: "Blu-me";
+    font-size: 20pt;
+    font-variation-settings: "BLUM" 50;
+}*/
+
+    @bottom-right {
+    content: none;
+    }
+}
+    
+    /* SECTION BREAKS -------------------------------- */
+
+    .chapter {
+        break-before: page;
+    }
+
+
+
+    /* CONTENT --------------------------------------- */
+
+#variable { 
+    display: none; 
+}
+
+.variable-font { 
+    display: none; 
+}
+
+.container { 
+    display: none; 
+}
+
+p   {
+
+    margin: 5% 5% 10% 5%;
+    font-size: 13pt;
+    letter-spacing: -0.05em;
+}
+
+p2   {
+    margin-bottom: 5%;
+}
+
+p3 {
+    font-family: "NewEdge666";
+    font-size: 17px;
+    line-height: 0.5;
+    background-color: #39FF14;
+}
+
+h2 {
+    font-family: "NewEdge666";
+    font-size: 20pt;
+    color: white;
+    background-color: black;
+}
+
+.headline {
+    break-before: page;
+    font-family: "NewEdge666";
+    font-size: 45pt;
+    line-height: 1.1;
+}
+
+.Impressum {
+    break-before: page;
+}
+
+
+/*.flower {
+    color: black;
+    background-color: #39FF14;
+    font-size: 130px;
+    text-align: left;
+    margin-top: 5%;
+    padding: 5%;
+}*/
+
+.next-to-flower {
+    break-before: page;
+    color: black;
+/*    background-color: #39FF14;*/
+    text-align: left;
+}
+
+
+.pic03 {
+    margin-left: 20%;
+    margin-top: -20%;
+}
+
+.pic04 {
+    width: 70%;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+
+.pic05 {
+    width: 80%;
+}
+
+.pic06 {
+    width: 50%;
+    margin-left: 30%;
+    margin-top: -20%;
+    margin-right: 10%;
+}
+
+/*.gallery {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth;
+    margin: 0% -5% 0% -4%;
+ 
+}*/
+
+.gallery img {
+    scroll-snap-align: start; 
+    max-width: 100%;
+    margin: 0% 0% 0% 0%;
+}
+
+.highlight {
+font-family: "Blu-me";
+    font-variation-settings: "BLUM" 50;
+}
+
+/*@keyframes flower-animation {
+  from {
+    font-variation-settings: "BLUM" 0;
+  }
+  to {
+    font-variation-settings: "BLUM" 100;
+  }
+}*/
+    
+}
+
+
